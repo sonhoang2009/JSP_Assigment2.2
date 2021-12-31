@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>ListFood</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Food.ListFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListFood</servlet-name>
+        <url-pattern>/admin/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateFood</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Food.CreateNewFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateFood</servlet-name>
+        <url-pattern>/admin/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetFoodDetail</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Food.GetFoodDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetFoodDetail</servlet-name>
+        <url-pattern>/admin/detail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateFood</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Food.UpdateFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFood</servlet-name>
+        <url-pattern>/admin/update</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteFoodServlet</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Food.DeleteFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFoodServlet</servlet-name>
+        <url-pattern>/admin/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListCategory</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Category.ListCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCategory</servlet-name>
+        <url-pattern>/admin/list-category</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateCategory</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Category.CreateCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCategory</servlet-name>
+        <url-pattern>/admin/create-category</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCategory</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Category.DeleteCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCategory</servlet-name>
+        <url-pattern>/admin/delete-category</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateCategory</servlet-name>
+        <servlet-class>com.jspassigment2.jsp_assigment2.controller.Category.UpdateCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCategory</servlet-name>
+        <url-pattern>/admin/update-category</url-pattern>
+    </servlet-mapping>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>
